@@ -1,0 +1,5 @@
+#!/bin/sh
+if [ -z "`curl http://$ip/user/yan.php?user=$username\\&pass=$password | grep ^1`" ] ;then
+exit 1
+fi
+exit 0
