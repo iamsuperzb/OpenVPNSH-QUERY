@@ -1,0 +1,4 @@
+
+_down="`expr $bytes_received `"
+_up="`expr $bytes_sent `"
+kou=`wget http://$ip/user/kou.php?user=$username\\&up=$_up\\&down=$_down -O - -q ; echo`
